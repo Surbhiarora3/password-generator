@@ -12,7 +12,7 @@ var specialsymbol = ['!','@','#','$','%','^','&','*','-','+','='];
 switch(userSelection)
 {
   case '1':
-  //console.log(numbers);
+  
   return (PassString(numbers,num));
     break;
     
@@ -34,37 +34,20 @@ switch(userSelection)
       return  (PassString(op,num)).join("");
        
         break;
-
-    
-
-  
 }
-// console.log(alphabetsLower);
 
-//  console.log(new Date().getDay());
-
-
-  //return "password"
 }
 
 function PassString(userSelection,num)
 {
   var passString=[];
-//console.log(parseInt(num));
+
 var a=parseInt(num);
-//console.log(a);
-  // for(let i=0; i>=a; i++)
-  // {
-  // //  console.log("Sumit Says ",userSelection.length);
-  //   var ranNum=Math.floor(Math.random() * userSelection.length);
-  //   console.log("Test",userSelection[4]);
-  //   passString.push(userSelection[ranNum]);
-    
-  // }
+
 
   for (let i = 0; i < a; i++)
   {
-  //  console.log("Sumit Says ",userSelection.length);
+  
     var ranNum=Math.floor(Math.random() * userSelection.length);
     console.log("Test",userSelection[4]);
     passString.push(userSelection[ranNum]);
@@ -76,18 +59,9 @@ return passString;
 }
 
 
-
-
-// var get = document.querySelector();
-
-
-
-
-
-// Assignment Code, DO NOT EDIT ANTHING  BELOW THIS LINE
 var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
+
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
@@ -96,5 +70,4 @@ function writePassword() {
 
 }
 
-// Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
